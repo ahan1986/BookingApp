@@ -43,3 +43,7 @@ namespace FlightandHotel.Controllers
         }
     }
 }
+
+/*
+ 1. need a dbcontext and using sql lite to get it started
+ */
