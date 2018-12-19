@@ -28,9 +28,9 @@ namespace FlightandHotel
         {
             services.AddCors();
             services.AddMvc();
-            // add dbcontext service first. We will call out dbcontext 'fightandhotel' and pass in options we want with this. Add our data source and we will call out db flighthotel. We have to use EF to fix the errors
-            //services.AddDbContext<FlightAndHotel>((options) =>
-                    //options.UseSqlite("Data Source=FlightHotel.db"));
+            // add dbcontext service first. We will call out dbcontext 'fightandhotel' and pass in options we want with this. Add our data source and we will call out db flighthotel. We have to use EF to fix the errors.  There was an error under UseSqlite, seems like the problem was fixed when we changed the FlightAndHotel and added Context and already had that file made with DbSet and everything.
+            services.AddDbContext<FlightAndHotelContext>((options) =>
+                    options.UseSqlite("Data Source=FlightHotel.db"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
