@@ -9,6 +9,6 @@ namespace FlightandHotel.Models
         public string FName { get; set; }
         public string LName { get; set; }
         public string Email { get; set; }
-        public object Details { get; set; } // will get this from our external API
+        public string Details { get; set; } // will get this from our external API
     }
 }

@@ -7,6 +7,6 @@ namespace FlightandHotel.Models
     {
         public FlightAndHotelContext (DbContextOptions<FlightAndHotelContext> options) : base (options) { }
         // using the flightandhotel model and using it as our DbSet
-        public DbSet<FlightandHotel.Models.FlightAndHotel> FlightAndHotel { get; set; }
+        public DbSet<FlightAndHotel> FlightAndHotel { get; set; }
     }
 }

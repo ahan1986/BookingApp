@@ -66,3 +66,4 @@ namespace FlightandHotel
         }
     }
 }
+// we are going to scaffold. go into the folder in terminal and run 'dotnet restore'
